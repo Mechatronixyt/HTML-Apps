@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="author" content="Mecha">
+        <title>Piano Mecha-tools</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="page-preloader" class="preloader">
+            <p class="loading-text">Loading... please wait!</p>
+            <div class="loader"></div>
+            <div class="loader2"></div>
+            <div class="loader3"></div>
+            <div class="loader4"></div>
+            <div class="loader5"></div>
+            <div class="border"></div>
+        </div>
+    
+        <div class="piano">
+            <div class="key key-w" id="C" onClick="play(C)">C</div>
+            <div class="key key-b" id="Cs" onClick="play(Cs)">C#</div>
+            <div class="key key-w" id="D" onClick="play(D)">D</div>
+            <div class="key key-b" id="Ds" onClick="play(Ds)">D#</div>
+            <div class="key key-w" id="E" onClick="play(E)">E</div>
+            <div class="key key-w" id="F" onClick="play(F)">F</div>
+            <div class="key key-b" id="Fs" onClick="play(Fs)">F#</div>
+            <div class="key key-w" id="G" onClick="play(G)">G</div>
+            <div class="key key-b" id="Gs" onClick="play(Gs)">G#</div>
+            <div class="key key-w" id="A" onClick="play(A)">A</div>
+            <div class="key key-b" id="As" onClick="play(As)">A#</div>
+            <div class="key key-w" id="B" onClick="play(B)">B</div>
+</div>
+
+        <script>
+                window.onload = function loading() {
+    
+                setTimeout(function() {
+                var preloader = document.getElementById("page-preloader");
+                if( !preloader.classList.contains('done') ) 
+        {
+                preloader.classList.add('done');  
+        }
+    }, 1000);
+    
+}
+        </script>
+    </body>
+</html> 
